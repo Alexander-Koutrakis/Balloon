@@ -171,7 +171,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -894,7 +894,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -1691,7 +1691,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -1811,7 +1811,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -2343,7 +2343,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -2463,7 +2463,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -2807,7 +2807,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -2927,7 +2927,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -3047,7 +3047,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -3313,7 +3313,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -3433,7 +3433,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -3553,7 +3553,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -3752,7 +3752,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -4138,53 +4138,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4200b173d5a4dce91788c6eaba456f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dynamicRatio: 0.5
-  stiffnessForce: 0.1
+  dynamicRatio: 1
+  stiffnessForce: 0.001
   stiffnessCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.049946144
-      outSlope: -0.049946144
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.9916687
-      value: 0.95047
-      inSlope: -0.049946144
-      outSlope: -0.049946144
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  dragForce: 0.9
+  dragForce: 0.4
   dragCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.049794864
-      outSlope: -0.049794864
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
-      time: 1.0041809
-      value: 0.94999695
-      inSlope: -0.049794864
-      outSlope: -0.049794864
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -4314,7 +4314,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -4671,7 +4671,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -4854,7 +4854,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -5152,7 +5152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b20ed288700fe71428153d68de8c708b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorChangeRate: 5
+  colorChangeRate: 3
   speed: 15
   mapWidth: 4
   ChosenColor: 0
@@ -5346,7 +5346,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0
@@ -5466,7 +5466,7 @@ MonoBehaviour:
   isUseEachBoneForceSettings: 0
   stiffnessForce: 0.01
   dragForce: 0.4
-  springForce: {x: 0, y: -0.05, z: 0}
+  springForce: {x: 0, y: -0.01, z: 0}
   colliders: []
   threshold: 0.01
   isAnimated: 0

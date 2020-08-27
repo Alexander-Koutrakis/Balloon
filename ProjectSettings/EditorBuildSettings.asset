@@ -12,9 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Colors_Level_1.unity
     guid: a0aa4ae3feed1d14bba7b803a427dbc3
   - enabled: 1
+    path: Assets/Scenes/Shapes_Level_1.unity
+    guid: 6ab887bdd50d938438536e8b20f3bf50
+  - enabled: 1
+    path: Assets/Scenes/Letters_Level_1.unity
+    guid: c05bac39d6334f140b40213c66ee30ce
+  - enabled: 1
     path: Assets/Scenes/All_Level.unity
     guid: b5972d64165f2754e9e6388c27fd7260
   - enabled: 1
-    path: Assets/Scenes/Shapes_Level_1.unity
-    guid: 6ab887bdd50d938438536e8b20f3bf50
+    path: Assets/Scenes/Colors_Endless.unity
+    guid: 452de646c28356d4184a001a01b3c508
+  - enabled: 1
+    path: Assets/Scenes/Shapes_Endless.unity
+    guid: d88d0e8d00c722e42b92524be8f7ff76
+  - enabled: 1
+    path: Assets/Scenes/Letters_Endless.unity
+    guid: a4ae2a1842855f54aa245ea101e69ecd
   m_configObjects: {}

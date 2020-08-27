@@ -29,17 +29,19 @@ public class Player : MonoBehaviour
     private List<spawningList> Endless_List = new List<spawningList>();
     void Start()
     {
+       
+        SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
+        lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
         rb = GetComponent<Rigidbody2D>();
         tail_Control = GetComponent<Tail_Control>();
         int x = Random.Range(0, colorsID.Count);
         ChosenColor = colorsID[x];
         colorChange = 0;
         targetImage.sprite = Images[x];
-        Images.RemoveAt(x);
 
 
-        SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
-        lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
+
+        
     }
 
     void FixedUpdate()
@@ -88,9 +90,13 @@ public class Player : MonoBehaviour
                       {
                             lists_to_Spawn.Add(sList);
                       }
+                        lists_to_Spawn[lists_to_Spawn.Count - 1].ResetList();
+                        SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
+                        lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
                     }
                     else
                     {
+                        lists_to_Spawn[lists_to_Spawn.Count - 1].ResetList();
                         SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
                         lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
                     }
@@ -133,11 +139,11 @@ public class Player : MonoBehaviour
 
     public void SpawnNewList(spawningList thisList)
     {
-        colorsID = thisList.colorsID;
-        savedID = thisList.savedID;
-        Images = thisList.images;
+       
+        savedID = thisList.savedID;        
         SavedSprites = thisList.SavedSprites;
-
+        colorsID = thisList.colorsID;
+        Images = thisList.images;
         foreach (RandomSpawn2Script spawner in spawners)
         {
             spawner.spawnGameobjects = thisList.GO_List;

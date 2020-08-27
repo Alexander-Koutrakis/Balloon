@@ -29,17 +29,18 @@ public class Player_Levels : MonoBehaviour
 
     void Start()
     {
+        SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
+        lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
         rb = GetComponent<Rigidbody2D>();
         tail_Control = GetComponent<Tail_Control>();
         int x = Random.Range(0, colorsID.Count);
         ChosenColor = colorsID[x];
         colorChange = 0;
         targetImage.sprite = Images[x];
-        Images.RemoveAt(x);
+
 
         
-        SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
-        lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
+        
     }
 
     void FixedUpdate()

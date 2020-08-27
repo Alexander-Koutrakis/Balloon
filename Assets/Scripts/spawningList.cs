@@ -16,13 +16,18 @@ public class spawningList : ScriptableObject
     private void OnEnable()
     {
 
+        ResetList();
+    }
+
+    public void ResetList()
+    {
         colorsID.Clear();
-        foreach(int i in savedID)
+        foreach (int i in savedID)
         {
             colorsID.Add(i);
         }
         images.Clear();
-        foreach(Sprite i in SavedSprites)
+        foreach (Sprite i in SavedSprites)
         {
             images.Add(i);
         }
