@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8c60b81e08dce4dbbe6cfc705d3b31, type: 3}
+  m_Name: Letters_Pack_2
+  m_EditorClassIdentifier: 
+  GO_List:
+  - {fileID: 4666642830032563049, guid: 9ebe18b1327a3da4a95a354fef190a71, type: 3}
+  - {fileID: 2122185538842706268, guid: 10a58dc2373a97344a4b08fa93ee70fb, type: 3}
+  - {fileID: 5004843106814990388, guid: 8da2461445568ee4d88e00d89cef367e, type: 3}
+  - {fileID: 1985374405928396883, guid: 3dd3a8191d6c1a744ad82b8093e47006, type: 3}
+  - {fileID: 4377107477785334214, guid: 30589da8dbc47e94288ad3d775513af8, type: 3}
+  - {fileID: 6809150542562958495, guid: 301e902070d00844387ea8fb32e81fc2, type: 3}
+  colorsID: 
+  savedID: 0c0000001000000013000000170000001b0000001f000000
+  images: []
+  SavedSprites:
+  - {fileID: 21300000, guid: ba7f295c050918d45906f1b4c0c458f6, type: 3}
+  - {fileID: 21300000, guid: 42ea597bd5ffb824ba80fbd4ae1fc6d1, type: 3}
+  - {fileID: 21300000, guid: ce9a9fb2ecdb0c74c9a88edefb418bd0, type: 3}
+  - {fileID: 21300000, guid: dcac2d0bec94e86478bbc7226c386cb6, type: 3}
+  - {fileID: 21300000, guid: 92e4467891d1aea4c8a723f4162a9bc1, type: 3}
+  - {fileID: 21300000, guid: 78d62226916e259419e6902e696d46ee, type: 3}
