@@ -22,10 +22,12 @@ public class Intro_Zone : MonoBehaviour
         playerBody.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
-
+    private void Start()
+    {
+        PlayerController.Instance.gameObject.SetActive(false);
+    }
     public void FadePanel()
     {
-        Debug.Log("here");
         StartCoroutine(LoadToNextScene());
         playerBody.constraints = RigidbodyConstraints2D.None;
     }
@@ -45,5 +47,6 @@ public class Intro_Zone : MonoBehaviour
         yield return new WaitForSeconds(1);
         Destroy(IntroCanvas.gameObject);
         Destroy(introGameobject);
+        PlayerController.Instance.gameObject.SetActive(true);
     }
 }

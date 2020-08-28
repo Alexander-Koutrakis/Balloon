@@ -43,17 +43,10 @@ public class Player_Levels : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    private void Update()
     {
-        float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * speed;
-
-        Vector2 newPosition = rb.position + Vector2.right * x;
-
-        newPosition.x = Mathf.Clamp(newPosition.x, -mapWidth, mapWidth);
-
-        rb.MovePosition(newPosition);
+        transform.position = Vector3.MoveTowards(transform.position, PlayerController.Instance.target_Pos, Time.deltaTime * 10);
     }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

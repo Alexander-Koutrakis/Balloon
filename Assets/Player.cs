@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+//using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour
     private List<RandomSpawn2Script> spawners = new List<RandomSpawn2Script>();
     [SerializeField]
     private List<spawningList> Endless_List = new List<spawningList>();
+    
     void Start()
     {
        
@@ -44,16 +46,25 @@ public class Player : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+   
+
+    private void Update()
     {
-        float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * speed;
 
-        Vector2 newPosition = rb.position + Vector2.right * x;
-
-        newPosition.x = Mathf.Clamp(newPosition.x, -mapWidth, mapWidth);
-
-        rb.MovePosition(newPosition);
+        transform.position = Vector3.MoveTowards(transform.position, PlayerController.Instance.target_Pos, Time.deltaTime*10);
     }
+
+
+    //void FixedUpdate()
+    //{
+    //    float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * speed;
+
+    //    Vector2 newPosition = rb.position + Vector2.right * x;
+
+    //    newPosition.x = Mathf.Clamp(newPosition.x, -mapWidth, mapWidth);
+
+    //    rb.MovePosition(newPosition);
+    //}
 
 
     private void OnCollisionEnter2D(Collision2D collision)
