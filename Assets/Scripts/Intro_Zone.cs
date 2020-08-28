@@ -47,6 +47,7 @@ public class Intro_Zone : MonoBehaviour
         yield return new WaitForSeconds(1);
         Destroy(IntroCanvas.gameObject);
         Destroy(introGameobject);
-        PlayerController.Instance.gameObject.SetActive(true);
+        if (PlayerController.Instance.target_Pos != null)
+            PlayerController.Instance.gameObject.SetActive(true);
     }
 }

@@ -45,7 +45,11 @@ public class Player_Levels : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, PlayerController.Instance.target_Pos, Time.deltaTime * 10);
+        if (PlayerController.Instance != null)
+        {
+            transform.Translate(PlayerController.Instance.direction * Time.deltaTime*50);
+        }
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4, 4), 0, 0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -71,6 +75,7 @@ public class Player_Levels : MonoBehaviour
                 colorsID.Remove(ChosenColor);
                 // player feedback
                 //play sound
+                if(AudioManager.Instance!=null)
                 AudioManager.Instance.PlaySFX(AudioManager.Instance.correctPop_Clip);
 
 

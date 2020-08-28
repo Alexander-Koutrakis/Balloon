@@ -4903,7 +4903,7 @@ MonoBehaviour:
   explosion: {fileID: 556031817826568829, guid: 0d20bdf08f8787141a096664c6350248,
     type: 3}
   targetImage: {fileID: 1066659468}
-  nextScene: 
+  nextScene: All_Level_1
   fadeImage: {fileID: 1878735248}
   lists_to_Spawn:
   - {fileID: 11400000, guid: c7fd11a920917ef4c803a405637e2dab, type: 2}
@@ -5155,6 +5155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target_Pos: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
 --- !u!61 &1792573314
 BoxCollider2D:
   m_ObjectHideFlags: 0

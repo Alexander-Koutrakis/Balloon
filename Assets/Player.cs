@@ -40,32 +40,18 @@ public class Player : MonoBehaviour
         ChosenColor = colorsID[x];
         colorChange = 0;
         targetImage.sprite = Images[x];
-
-
-
         
     }
 
-   
 
     private void Update()
     {
-
-        transform.position = Vector3.MoveTowards(transform.position, PlayerController.Instance.target_Pos, Time.deltaTime*10);
+        if (PlayerController.Instance != null)
+        {
+            transform.Translate(PlayerController.Instance.direction * Time.deltaTime * 50);
+        }
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4, 4), 0, 0);
     }
-
-
-    //void FixedUpdate()
-    //{
-    //    float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * speed;
-
-    //    Vector2 newPosition = rb.position + Vector2.right * x;
-
-    //    newPosition.x = Mathf.Clamp(newPosition.x, -mapWidth, mapWidth);
-
-    //    rb.MovePosition(newPosition);
-    //}
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
