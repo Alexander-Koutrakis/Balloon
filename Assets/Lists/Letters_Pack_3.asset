@@ -13,25 +13,19 @@ MonoBehaviour:
   m_Name: Letters_Pack_3
   m_EditorClassIdentifier: 
   GO_List:
-  - {fileID: 3837083979132935188, guid: 8dbce1e23cc17bb4f892c688f3e987a1, type: 3}
-  - {fileID: 2256881279855111678, guid: 3bb63380484189549b4bba70e369d0a1, type: 3}
-  - {fileID: 1468737892778235746, guid: 1a4b4028ee2ee1c4482f07e99bd5db93, type: 3}
-  - {fileID: 278682264809308116, guid: eecbd518402cd9d4ea39abea4599f25e, type: 3}
-  - {fileID: 3959771697091331969, guid: c3b5568d1b501a64cb80bc50578ada8d, type: 3}
-  - {fileID: 5458642833193735587, guid: 51d96f05878ec79499260dbce08dfe2e, type: 3}
-  colorsID: 0d0000001100000014000000180000001c00000020000000
-  savedID: 0e00000012000000160000001a0000001e00000022000000
-  images:
+  - {fileID: 7045021638922646175, guid: a6c182b70c407c14caeb2c6455f6ba34, type: 3}
+  - {fileID: 3160818788208183311, guid: 8bd5ef4a47a29be42aaace7145a15a91, type: 3}
+  - {fileID: 6965341576515401226, guid: 83e1c1ac6e7011d4e803056b67799f64, type: 3}
+  - {fileID: 1330906786594068678, guid: 337abe76a359a5045a5028cd6009f29e, type: 3}
+  - {fileID: 3314978772201529106, guid: 7d38d3145a41f5249a583e1aa301a5f7, type: 3}
+  - {fileID: 6532459504607868516, guid: 3b0636f4f89cdb84d937b4c43e595b4a, type: 3}
+  colorsID: 
+  savedID: 0d0000001100000015000000190000001d00000021000000
+  images: []
+  SavedSprites:
   - {fileID: 21300000, guid: 48bb37774c9673a419e9d8980be8d319, type: 3}
   - {fileID: 21300000, guid: 714901591525a0b48b6f4e474a2bfe6d, type: 3}
   - {fileID: 21300000, guid: fc37241b899998a468486597642d1209, type: 3}
   - {fileID: 21300000, guid: b1e5ba40414b2aa4099df6ac006264b3, type: 3}
   - {fileID: 21300000, guid: 7f4e92ac0adde7f41b8c9b50b2bf0a60, type: 3}
   - {fileID: 21300000, guid: bbbd42b3c64dd394894fbdf0376f0c56, type: 3}
-  SavedSprites:
-  - {fileID: 21300000, guid: dfe14e0beddbe944e91d7c471834b0dd, type: 3}
-  - {fileID: 21300000, guid: 10775c2602b865341af2554804ffbb1d, type: 3}
-  - {fileID: 21300000, guid: 644ded27f01c19b47a5e16d83698b686, type: 3}
-  - {fileID: 21300000, guid: b240012c87693a14aae5a32276ce0dc5, type: 3}
-  - {fileID: 21300000, guid: bfc387e29cd1fe04c9e15472ebefabb9, type: 3}
-  - {fileID: 21300000, guid: ecce87bf28e799c49bec65b9cb5d676c, type: 3}

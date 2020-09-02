@@ -7,16 +7,16 @@ public class ChooseLevel : MonoBehaviour
 {
     public void Colors_Level()
     {
-        SceneManager.LoadScene("Colors_Level_1");
+        SceneManager.LoadScene("Colors_Endless");
     }
 
     public void Letters_Level()
     {
-        SceneManager.LoadScene("Letters_Level_1");
+        SceneManager.LoadScene("Letters_Endless");
     }
 
     public void Shapes_Level()
     {
-        SceneManager.LoadScene("Shapes_Level_1");
+        SceneManager.LoadScene("Shapes_Endless");
     }
 }

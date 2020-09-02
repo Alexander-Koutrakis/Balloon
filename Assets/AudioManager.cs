@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     private AudioSource SFX_AudioSource;
     public AudioClip correctPop_Clip;
     public AudioClip WinLevel;
+    public AudioClip colorChange;
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -46,6 +47,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip audioClip)
     {
         SFX_AudioSource.PlayOneShot(audioClip);
+        Debug.Log(audioClip.name);
     }
 
 }

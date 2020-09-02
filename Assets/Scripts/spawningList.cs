@@ -13,24 +13,22 @@ public class spawningList : ScriptableObject
     public List<Sprite> SavedSprites = new List<Sprite>();
 
 
-    private void OnEnable()
-    {
-
-        ResetList();
-    }
+   
 
     public void ResetList()
     {
         colorsID.Clear();
-        foreach (int i in savedID)
-        {
-            colorsID.Add(i);
-        }
         images.Clear();
-        foreach (Sprite i in SavedSprites)
+        foreach (GameObject go in GO_List)
         {
-            images.Add(i);
+            colorsID.Add(go.GetComponent<ColorCode>().colorID);
+            images.Add(go.GetComponent<SpriteRenderer>().sprite);
         }
+        //images.Clear();
+        //foreach (Sprite i in SavedSprites)
+        //{
+        //    images.Add(i);
+        //}
     }
 
 }

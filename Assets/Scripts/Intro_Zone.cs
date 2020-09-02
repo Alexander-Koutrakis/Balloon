@@ -24,7 +24,7 @@ public class Intro_Zone : MonoBehaviour
 
     private void Start()
     {
-        PlayerController.Instance.gameObject.SetActive(false);
+       // PlayerController.Instance.gameObject.SetActive(false);
     }
     public void FadePanel()
     {
@@ -47,7 +47,6 @@ public class Intro_Zone : MonoBehaviour
         yield return new WaitForSeconds(1);
         Destroy(IntroCanvas.gameObject);
         Destroy(introGameobject);
-        if (PlayerController.Instance.target_Pos != null)
-            PlayerController.Instance.gameObject.SetActive(true);
+       
     }
 }

@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public Vector3 direction;
     public Vector3 mouseDelta = Vector3.zero;
     private Vector3 lastMousePosition = Vector3.zero;
+    [SerializeField]
+    private Player_Levels player_Levels;
     private void Awake()
     {
         Instance = this;
@@ -90,11 +92,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private bool MouseIsMoving()
-    {
 
 
-
-        return true;
-    }
+  
 }

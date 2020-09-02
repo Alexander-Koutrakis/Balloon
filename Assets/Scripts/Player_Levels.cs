@@ -29,6 +29,7 @@ public class Player_Levels : MonoBehaviour
 
     void Start()
     {
+        lists_to_Spawn[lists_to_Spawn.Count - 1].ResetList();
         SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
         lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
         rb = GetComponent<Rigidbody2D>();
@@ -47,7 +48,7 @@ public class Player_Levels : MonoBehaviour
     {
         if (PlayerController.Instance != null)
         {
-            transform.Translate(PlayerController.Instance.direction * Time.deltaTime*50);
+            transform.Translate(PlayerController.Instance.direction * Time.fixedDeltaTime*10);
         }
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4, 4), 0, 0);
     }
@@ -65,7 +66,8 @@ public class Player_Levels : MonoBehaviour
                 colorChange++;
                 Destroy(collision.gameObject);
                 tail_Control.Add_To_Tail(targetImage.sprite);            
-                Instantiate(explosion, collision.transform.position, Quaternion.identity);              
+                Instantiate(explosion, collision.transform.position, Quaternion.identity);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.correctPop_Clip);
             }
             
             if (colorChange >= colorChangeRate)
@@ -90,6 +92,7 @@ public class Player_Levels : MonoBehaviour
                     }
                     else
                     {
+                        lists_to_Spawn[lists_to_Spawn.Count - 1].ResetList();
                         SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
                         lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
                     }
@@ -100,8 +103,8 @@ public class Player_Levels : MonoBehaviour
                 {
                     int x = Random.Range(0, colorsID.Count);
                     ChosenColor = colorsID[x];
-
                     targetImage.sprite = Images[x];
+                    AudioManager.Instance.PlaySFX(AudioManager.Instance.colorChange);
 
                 }
                 colorChange = 0;
@@ -142,5 +145,20 @@ public class Player_Levels : MonoBehaviour
             spawner.spawnGameobjects = thisList.GO_List;
         }
 
+    }
+
+    public void MoveLeft()
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector3(-6, 0, 0);
+    }
+
+    public void MoveRight()
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector3(6, 0, 0);
+    }
+
+    public void StopMoving()
+    {
+        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity * 0.5f;
     }
 }
