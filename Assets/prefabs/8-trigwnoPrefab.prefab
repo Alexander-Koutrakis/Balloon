@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5440592139510925033}
   - component: {fileID: 2779212470985049672}
   - component: {fileID: 8237401598349571210}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: 8-trigwnoPrefab
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

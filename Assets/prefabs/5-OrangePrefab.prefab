@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1403860214432816076}
   - component: {fileID: 2569384536361011942}
   - component: {fileID: 2829683513567413462}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: 5-OrangePrefab
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

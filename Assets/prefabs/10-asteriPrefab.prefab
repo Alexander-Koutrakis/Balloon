@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2518022418702381151}
   - component: {fileID: 5755796800011972862}
   - component: {fileID: 3169990094496471440}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: 10-asteriPrefab
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

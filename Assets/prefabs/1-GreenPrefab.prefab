@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8473096734329763075}
   - component: {fileID: 6456061186488386175}
   - component: {fileID: 1852782027137387086}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: 1-GreenPrefab
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

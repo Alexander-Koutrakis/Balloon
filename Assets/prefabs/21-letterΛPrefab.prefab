@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6884985927635851853}
   - component: {fileID: 2147678340064524760}
   - component: {fileID: 8933319357838206368}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: "21-letter\u039BPrefab"
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

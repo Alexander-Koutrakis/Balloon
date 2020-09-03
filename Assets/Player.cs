@@ -28,7 +28,13 @@ public class Player : MonoBehaviour
     private List<RandomSpawn2Script> spawners = new List<RandomSpawn2Script>();
     [SerializeField]
     private List<spawningList> Endless_List = new List<spawningList>();
-    
+
+  private float t;
+  private Vector3 startPosition;
+  private Vector3 target;
+  private float timeToReachTarget;
+  private IEnumerator currentIE;
+
     void Start()
     {
         lists_to_Spawn[lists_to_Spawn.Count - 1].ResetList();
@@ -39,17 +45,16 @@ public class Player : MonoBehaviour
         int x = Random.Range(0, colorsID.Count);
         ChosenColor = colorsID[x];
         colorChange = 0;
-        targetImage.sprite = Images[x];        
+        targetImage.sprite = Images[x];
+
+        startPosition = target = transform.position;
     }
 
 
     //private void Update()
     //{
-    //    if (PlayerController.Instance != null)
-    //    {
-    //        transform.Translate(PlayerController.Instance.direction * Time.fixedDeltaTime * 10);
-    //    }
-    //    transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4, 4), 0, 0);
+    //    t += Time.deltaTime / timeToReachTarget;
+    //    transform.position = Vector3.Lerp(startPosition, target, t);
     //}
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -163,6 +168,32 @@ public class Player : MonoBehaviour
 
     public void StopMoving()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity * 0.5f;
+    }
+
+
+    public void MoveToPosition()
+    {
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Debug.Log(pos);
+        pos = new Vector3(pos.x, transform.position.y, transform.position.z);
+        if (currentIE != null)
+        {
+            StopCoroutine(currentIE);
+        }
+        currentIE = MoveToPosition(transform, pos, 0.1f);
+        StartCoroutine(currentIE);
+    }
+
+    public IEnumerator MoveToPosition(Transform transform, Vector3 position, float timeToMove)
+    {
+        var currentPos = transform.position;
+        var t = 0f;
+        while (t < 1)
+        {
+            t += Time.deltaTime / timeToMove;
+            transform.position = Vector3.Lerp(currentPos, position, t);
+            yield return null;
+        }
     }
 }

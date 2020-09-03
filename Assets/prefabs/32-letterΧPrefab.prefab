@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7861715777524048828}
   - component: {fileID: 7782293224330214875}
   - component: {fileID: 4099257987322889096}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: "32-letter\u03A7Prefab"
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

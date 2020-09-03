@@ -26,7 +26,7 @@ public class Player_Levels : MonoBehaviour
     public List<spawningList> lists_to_Spawn = new List<spawningList>();
     [SerializeField]
     private List<RandomSpawn2Script> spawners = new List<RandomSpawn2Script>();
-
+    private IEnumerator currentIE;
     void Start()
     {
         lists_to_Spawn[lists_to_Spawn.Count - 1].ResetList();
@@ -159,6 +159,33 @@ public class Player_Levels : MonoBehaviour
 
     public void StopMoving()
     {
-        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity * 0.5f;
+        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity * 0.95f;
+    }
+
+    public void MoveToPosition()
+    {
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Debug.Log(pos);
+        pos = new Vector3(pos.x, transform.position.y, transform.position.z);
+        if (currentIE != null)
+        {
+            StopCoroutine(currentIE);
+        }
+        currentIE = MoveToPosition(transform, pos, 0.1f);
+        StartCoroutine(currentIE);
+    }
+
+
+
+    public IEnumerator MoveToPosition(Transform transform, Vector3 position, float timeToMove)
+    {
+        var currentPos = transform.position;
+        var t = 0f;
+        while (t < 1)
+        {
+            t += Time.deltaTime / timeToMove;
+            transform.position = Vector3.Lerp(currentPos, position, t);
+            yield return null;
+        }
     }
 }
