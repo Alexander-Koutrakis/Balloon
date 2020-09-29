@@ -64,6 +64,7 @@ public class Player_Levels : MonoBehaviour
                 // dwse vathmous
                 score++;
                 colorChange++;
+                GameObject.FindGameObjectWithTag("Slider").SendMessage("Add_Score", score);
                 Destroy(collision.gameObject);
                 tail_Control.Add_To_Tail(targetImage.sprite);            
                 Instantiate(explosion, collision.transform.position, Quaternion.identity);

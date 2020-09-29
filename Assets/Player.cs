@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public float speed = 15;
     public float mapWidth = 5;
     public int ChosenColor;
-    private Rigidbody2D rb;
+
     public int score = 0;
     public int colorChange;
     public List<int> colorsID = new List<int>();
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         lists_to_Spawn[lists_to_Spawn.Count - 1].ResetList();
         SpawnNewList(lists_to_Spawn[lists_to_Spawn.Count - 1]);
         lists_to_Spawn.RemoveAt(lists_to_Spawn.Count - 1);
-        rb = GetComponent<Rigidbody2D>();
+       // rb = GetComponent<Rigidbody2D>();
         tail_Control = GetComponent<Tail_Control>();
         int x = Random.Range(0, colorsID.Count);
         ChosenColor = colorsID[x];
@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
             {
                 // dwse vathmous
                 score++;
+                GameObject.FindGameObjectWithTag("Slider").SendMessage("Add_Score",score);
                 colorChange++;
                 Destroy(collision.gameObject);
                 tail_Control.Add_To_Tail(targetImage.sprite);

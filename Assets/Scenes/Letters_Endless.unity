@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 83067937}
   - component: {fileID: 83067936}
   - component: {fileID: 83067938}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 133709617}
   - component: {fileID: 133709616}
   - component: {fileID: 133709618}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 134278556}
   - component: {fileID: 134278555}
   - component: {fileID: 134278557}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ GameObject:
   - component: {fileID: 222017824}
   - component: {fileID: 222017823}
   - component: {fileID: 222017825}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1085,6 +1085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1017232522}
+  player_Levels: {fileID: 0}
 --- !u!1 &410001806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,7 +1254,7 @@ GameObject:
   - component: {fileID: 506293203}
   - component: {fileID: 506293202}
   - component: {fileID: 506293204}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1503,7 +1504,7 @@ GameObject:
   - component: {fileID: 560410906}
   - component: {fileID: 560410905}
   - component: {fileID: 560410904}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1721,7 +1722,7 @@ GameObject:
   - component: {fileID: 635514624}
   - component: {fileID: 635514623}
   - component: {fileID: 635514625}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1841,7 +1842,7 @@ GameObject:
   - component: {fileID: 688386819}
   - component: {fileID: 688386818}
   - component: {fileID: 688386820}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1961,7 +1962,7 @@ GameObject:
   - component: {fileID: 693145126}
   - component: {fileID: 693145125}
   - component: {fileID: 693145127}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2158,7 +2159,7 @@ GameObject:
   - component: {fileID: 734280761}
   - component: {fileID: 734280760}
   - component: {fileID: 734280762}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2278,7 +2279,7 @@ GameObject:
   - component: {fileID: 754201918}
   - component: {fileID: 754201917}
   - component: {fileID: 754201919}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2398,7 +2399,7 @@ GameObject:
   - component: {fileID: 777798930}
   - component: {fileID: 777798929}
   - component: {fileID: 777798931}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2801,7 +2802,7 @@ GameObject:
   - component: {fileID: 1017232520}
   - component: {fileID: 1017232519}
   - component: {fileID: 1017232518}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2980,7 +2981,7 @@ GameObject:
   - component: {fileID: 1019737576}
   - component: {fileID: 1019737575}
   - component: {fileID: 1019737577}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3100,7 +3101,7 @@ GameObject:
   - component: {fileID: 1073043592}
   - component: {fileID: 1073043591}
   - component: {fileID: 1073043593}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3294,7 +3295,7 @@ GameObject:
   - component: {fileID: 1158504177}
   - component: {fileID: 1158504176}
   - component: {fileID: 1158504178}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3491,7 +3492,7 @@ GameObject:
   - component: {fileID: 1277772209}
   - component: {fileID: 1277772208}
   - component: {fileID: 1277772210}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4114,7 +4115,7 @@ GameObject:
   - component: {fileID: 1499481065}
   - component: {fileID: 1499481067}
   - component: {fileID: 1499481066}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4286,7 +4287,7 @@ GameObject:
   - component: {fileID: 1504919559}
   - component: {fileID: 1504919558}
   - component: {fileID: 1504919560}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4530,7 +4531,7 @@ GameObject:
   - component: {fileID: 1651991620}
   - component: {fileID: 1651991619}
   - component: {fileID: 1651991621}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4650,7 +4651,7 @@ GameObject:
   - component: {fileID: 1653273008}
   - component: {fileID: 1653273007}
   - component: {fileID: 1653273009}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5044,7 +5045,7 @@ GameObject:
   - component: {fileID: 1758054674}
   - component: {fileID: 1758054673}
   - component: {fileID: 1758054675}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5164,7 +5165,7 @@ GameObject:
   - component: {fileID: 1764835527}
   - component: {fileID: 1764835526}
   - component: {fileID: 1764835528}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5496,7 +5497,7 @@ GameObject:
   - component: {fileID: 1820904742}
   - component: {fileID: 1820904741}
   - component: {fileID: 1820904743}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5616,7 +5617,7 @@ GameObject:
   - component: {fileID: 1892391675}
   - component: {fileID: 1892391674}
   - component: {fileID: 1892391676}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5813,7 +5814,7 @@ GameObject:
   - component: {fileID: 1953653895}
   - component: {fileID: 1953653894}
   - component: {fileID: 1953653896}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

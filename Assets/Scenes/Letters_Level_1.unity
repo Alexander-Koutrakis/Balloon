@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: bbc13ca0a6d0cf9479bcc78404f9e45e,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +119,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -133,7 +136,7 @@ GameObject:
   - component: {fileID: 6584464}
   - component: {fileID: 6584463}
   - component: {fileID: 6584465}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,6 +209,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -273,6 +277,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -370,6 +375,10 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.5, y: 0}
   - {x: 0.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &29688231
 Transform:
   m_ObjectHideFlags: 0
@@ -396,7 +405,7 @@ GameObject:
   - component: {fileID: 67759381}
   - component: {fileID: 67759380}
   - component: {fileID: 67759382}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,6 +478,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -516,7 +526,7 @@ GameObject:
   - component: {fileID: 170178795}
   - component: {fileID: 170178794}
   - component: {fileID: 170178796}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,6 +599,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -636,7 +647,7 @@ GameObject:
   - component: {fileID: 213143825}
   - component: {fileID: 213143824}
   - component: {fileID: 213143826}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -709,6 +720,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -756,7 +768,7 @@ GameObject:
   - component: {fileID: 273894226}
   - component: {fileID: 273894225}
   - component: {fileID: 273894227}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,6 +841,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -876,7 +889,7 @@ GameObject:
   - component: {fileID: 310335926}
   - component: {fileID: 310335925}
   - component: {fileID: 310335927}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,6 +962,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1104,6 +1118,10 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.5, y: 0}
   - {x: 0.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &390548161
 Transform:
   m_ObjectHideFlags: 0
@@ -1186,6 +1204,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1296,6 +1315,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1596119916}
+        m_TargetAssemblyTypeName: 
         m_MethodName: FadePanel
         m_Mode: 1
         m_Arguments:
@@ -1329,6 +1349,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1399,7 +1420,7 @@ GameObject:
   - component: {fileID: 533965062}
   - component: {fileID: 533965061}
   - component: {fileID: 533965063}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1472,6 +1493,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1519,7 +1541,7 @@ GameObject:
   - component: {fileID: 536345632}
   - component: {fileID: 536345631}
   - component: {fileID: 536345633}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1592,6 +1614,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1710,6 +1733,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2103433850}
+        m_TargetAssemblyTypeName: 
         m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
@@ -1735,6 +1759,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1857,6 +1882,10 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.5, y: 0}
   - {x: 0.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &676212231
 Transform:
   m_ObjectHideFlags: 0
@@ -1883,7 +1912,7 @@ GameObject:
   - component: {fileID: 678230953}
   - component: {fileID: 678230952}
   - component: {fileID: 678230954}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1956,6 +1985,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2075,7 +2105,7 @@ GameObject:
   - component: {fileID: 742396553}
   - component: {fileID: 742396552}
   - component: {fileID: 742396554}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2148,6 +2178,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2266,6 +2297,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2103433850}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -2291,6 +2323,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2396,7 +2429,7 @@ GameObject:
   - component: {fileID: 802938062}
   - component: {fileID: 802938064}
   - component: {fileID: 802938063}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2521,6 +2554,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2651,7 +2685,7 @@ GameObject:
   - component: {fileID: 815243011}
   - component: {fileID: 815243010}
   - component: {fileID: 815243012}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2724,6 +2758,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2771,7 +2806,7 @@ GameObject:
   - component: {fileID: 840051598}
   - component: {fileID: 840051597}
   - component: {fileID: 840051599}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2844,6 +2879,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2947,6 +2983,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3156,7 +3193,7 @@ GameObject:
   - component: {fileID: 1029015013}
   - component: {fileID: 1029015012}
   - component: {fileID: 1029015014}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3229,6 +3266,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3316,6 +3354,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3371,6 +3410,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3483,6 +3523,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3521,7 +3562,7 @@ GameObject:
   - component: {fileID: 1194544422}
   - component: {fileID: 1194544421}
   - component: {fileID: 1194544423}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3594,6 +3635,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3641,7 +3683,7 @@ GameObject:
   - component: {fileID: 1218665024}
   - component: {fileID: 1218665023}
   - component: {fileID: 1218665025}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3714,6 +3756,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3832,6 +3875,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2103433850}
+        m_TargetAssemblyTypeName: 
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -3857,6 +3901,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3990,7 +4035,7 @@ GameObject:
   - component: {fileID: 1308619378}
   - component: {fileID: 1308619377}
   - component: {fileID: 1308619379}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4063,6 +4108,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4110,7 +4156,7 @@ GameObject:
   - component: {fileID: 1309090167}
   - component: {fileID: 1309090166}
   - component: {fileID: 1309090168}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4183,6 +4229,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4230,7 +4277,7 @@ GameObject:
   - component: {fileID: 1353409833}
   - component: {fileID: 1353409832}
   - component: {fileID: 1353409834}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4303,6 +4350,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4384,6 +4432,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4431,7 +4480,7 @@ GameObject:
   - component: {fileID: 1465376438}
   - component: {fileID: 1465376437}
   - component: {fileID: 1465376439}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4504,6 +4553,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4587,6 +4637,10 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.5, y: 0}
   - {x: 0.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &1477554128
 Transform:
   m_ObjectHideFlags: 0
@@ -4732,6 +4786,10 @@ EdgeCollider2D:
   m_Points:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &1596119919
 Transform:
   m_ObjectHideFlags: 0
@@ -4792,6 +4850,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4839,7 +4898,7 @@ GameObject:
   - component: {fileID: 1708195645}
   - component: {fileID: 1708195644}
   - component: {fileID: 1708195643}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4861,6 +4920,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4960,7 +5020,7 @@ GameObject:
   - component: {fileID: 1711188741}
   - component: {fileID: 1711188740}
   - component: {fileID: 1711188739}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5215,6 +5275,7 @@ RectTransform:
   m_Children:
   - {fileID: 1066659467}
   - {fileID: 1878735247}
+  - {fileID: 1879978906}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5235,7 +5296,7 @@ GameObject:
   - component: {fileID: 1820504827}
   - component: {fileID: 1820504826}
   - component: {fileID: 1820504828}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5308,6 +5369,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5395,6 +5457,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5417,6 +5480,136 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878735246}
   m_CullTransparentMesh: 0
+--- !u!1001 &1879978905
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1790992204}
+    m_Modifications:
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -81.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1035.9039
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 142.26184
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216841478823214783, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_Name
+      value: Progress_Slider
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054268523324017177, guid: c11e8ca581367c04da5d5039b0ea5d16,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c11e8ca581367c04da5d5039b0ea5d16, type: 3}
+--- !u!224 &1879978906 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 199273966209821174, guid: c11e8ca581367c04da5d5039b0ea5d16,
+    type: 3}
+  m_PrefabInstance: {fileID: 1879978905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1989680033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5429,7 +5622,7 @@ GameObject:
   - component: {fileID: 1989680036}
   - component: {fileID: 1989680035}
   - component: {fileID: 1989680037}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5502,6 +5695,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5631,6 +5825,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5665,7 +5860,7 @@ GameObject:
   - component: {fileID: 2019525663}
   - component: {fileID: 2019525662}
   - component: {fileID: 2019525664}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5738,6 +5933,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5785,7 +5981,7 @@ GameObject:
   - component: {fileID: 2042316800}
   - component: {fileID: 2042316799}
   - component: {fileID: 2042316801}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: New bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5858,6 +6054,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
