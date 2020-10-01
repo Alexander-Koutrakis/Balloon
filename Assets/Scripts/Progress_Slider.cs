@@ -6,7 +6,7 @@ public class Progress_Slider : MonoBehaviour
 {
     private Slider slider;
     [SerializeField]
-    private Player_Levels player;
+    private Player player;
     private int targetScore;
     private void Start()
     {
