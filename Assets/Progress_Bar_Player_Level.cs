@@ -11,7 +11,7 @@ public class Progress_Bar_Player_Level : MonoBehaviour
     private void Start()
     {
         slider = GetComponent<Slider>();
-        slider.maxValue = (player.lists_to_Spawn.Count * player.colorChangeRate * player.savedID.Count) - 1;
+        slider.maxValue = ((player.lists_to_Spawn.Count+1) * player.colorChangeRate * player.savedID.Count) - 1;
     }
 
 

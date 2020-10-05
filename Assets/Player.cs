@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
             {
                 // dwse vathmous
                 score++;
+                if (GameObject.FindGameObjectWithTag("Slider")!=null)
                 GameObject.FindGameObjectWithTag("Slider").SendMessage("Add_Score",score);
                 colorChange++;
                 Destroy(collision.gameObject);
