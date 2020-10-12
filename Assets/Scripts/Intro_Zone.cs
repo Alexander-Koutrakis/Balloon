@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class Intro_Zone : MonoBehaviour
 {
     [SerializeField]
     Image fadeImage = null;
 
     [SerializeField]
-    Text IntroText = null;
+    TMP_Text IntroText = null;
     [SerializeField]
     Canvas IntroCanvas = null;
     [SerializeField]

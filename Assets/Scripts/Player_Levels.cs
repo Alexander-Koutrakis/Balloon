@@ -167,7 +167,18 @@ public class Player_Levels : MonoBehaviour
     {
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Debug.Log(pos);
-        pos = new Vector3(pos.x, transform.position.y, transform.position.z);
+        if (pos.x < -4.1f)
+        {
+            pos = new Vector3(-4.1f, transform.position.y, transform.position.z);
+        }else if(pos.x > 4.1f)
+        {
+            pos = new Vector3(4.1f, transform.position.y, transform.position.z);
+        }
+        else
+        {
+            pos = new Vector3(pos.x, transform.position.y, transform.position.z);
+        }
+       
         if (currentIE != null)
         {
             StopCoroutine(currentIE);

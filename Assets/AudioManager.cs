@@ -28,13 +28,13 @@ public class AudioManager : MonoBehaviour
 
     public void Full_Volume()
     {
-        audioSource.volume = 1;
+        audioSource.volume = 0.5f;
         SFX_AudioSource.volume = 1;
     }
 
     public void Med_Volume()
     {
-        audioSource.volume = 0.5f;
+        audioSource.volume = 0.25f;
         SFX_AudioSource.volume = 0.5f;
     }
 

@@ -9,9 +9,10 @@ public class MouseDrag_Control : MonoBehaviour
     private Player player;
     [SerializeField]
     private Player_Levels player_Levels;
-
+  
     public void OnMouseDown()
     {
+
         if (player != null)
         {
             player.MoveToPosition();
@@ -25,14 +26,18 @@ public class MouseDrag_Control : MonoBehaviour
 
     public void OnMouseDrag()
     {
-        if (player != null)
-        {
-            player.MoveToPosition();
-        }
-        else
-        {
-            player_Levels.MoveToPosition();
-        }
+       
+            if (player != null)
+            {
+                player.MoveToPosition();
+            }
+            else
+            {
+                player_Levels.MoveToPosition();
+            }
+        
      
     }
+
+   
 }

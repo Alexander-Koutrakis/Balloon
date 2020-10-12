@@ -8,6 +8,7 @@ public class Progress_Bar_Player_Level : MonoBehaviour
     [SerializeField]
     private Player_Levels player;
     private int targetScore;
+
     private void Start()
     {
         slider = GetComponent<Slider>();
@@ -30,4 +31,6 @@ public class Progress_Bar_Player_Level : MonoBehaviour
             yield return null;
         }
     }
+
+   
 }
